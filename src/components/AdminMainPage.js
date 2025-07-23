@@ -28,6 +28,7 @@ const AdminMainPage = () => {
                         <li><Link to="/klienciadmin">Klienci</Link></li>
                         <li><Link to="/zamowieniaadmin">Zamówienia</Link></li>
                         <li><Link to="/fakturyadmin">Faktury</Link></li>
+                        <li><Link to="">Wydajność</Link></li>
                     </ul>
                 </nav>
             </div>

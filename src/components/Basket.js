@@ -40,7 +40,7 @@ const [taxdatas, setTaxDatas] = useState([])
   const navigate = useNavigate()
 
   
-  const stripePromise = loadStripe('pk_live_51RfLvJAmHEF4S4jOFufZ6W3hId3WQPoYP89kmoLS57Anyn33rI0Ndt0Kr2rYSIIly1a7z5qrWseCHZ6dAGRrncAe00TShy05sf'); // Użyj swojego klucza publicznego Stripe
+  const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY); // Użyj swojego klucza publicznego Stripe
   
 useEffect(() => {
   axios.get('http://localhost:5000/taxdatas')
